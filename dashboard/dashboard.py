@@ -4,7 +4,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
-bike_df = pd.read_csv("dashboard/all_data.csv")
+bike_df = pd.read_csv("dashboard/main_data.csv")
 
 st.title("Dashboard Analisis Data Bike Sharing")
 
