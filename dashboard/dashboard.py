@@ -4,15 +4,7 @@ import plotly.express as px
 
 st.set_page_config(page_title="Bike Sharing Dashboard", layout="wide")
 
-
-@st.cache_data
-def load_data():
-    df = pd.read_csv("dashboard/all_data.csv")
-    
-    df['dteday'] = pd.to_datetime(df['dteday'])
-    return df
-
-bike_df = load_data()
+bike_df = pd.read_csv("dashboard/all_data.csv")
 
 st.title("Dashboard Analisis Data Bike Sharing")
 
